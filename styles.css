@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/* Clean / padronizaçõa de HTML*/
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+*::selection {
+  color: #fff;
+  background-color: #808080;
+}
+
+/* Scrollbar */
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #d3d2d2;
+  border-radius: 5px;
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: #000;
+}
+
+/* Padronização de Sessões */
+.section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1em;
+}
+
+#logo {
+  border-radius: 85px;
+  border: 4px solid #000;
+  margin: 2em 0;
+}
+.text {
+  text-align: center;
+  margin: 0, 5em;
+}
+.nome {
+  font-size: 30px;
+  line-height: 22px;
+  margin: 0.5em;
+}
+.funcao {
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 13px;
+  color: rgb(0, 0, 0, 0.65);
+}
+
+/* Imagens com inteiração e substituição por colorida*/
+
+.links {
+  display: flex;
+  margin-top: 1em;
+}
+
+#LinkedIn {
+  height: 23px;
+  width: 56px;
+  background-image: url(img/LinkedIn.svg);
+  transition: 0.5s;
+}
+
+#LinkedIn:hover {
+  background: url(img/LinkedIn_hover.svg);
+}
+
+#Instagram {
+  height: 23px;
+  width: 56px;
+  background-image: url(img/Instagram.svg);
+  transition: 0.5s;
+}
+
+#Instagram:hover {
+  background: url(img/Instagram_hover.svg);
+}
+
+#Github {
+  height: 23px;
+  width: 56px;
+  background-image: url(img/GitHub.svg);
+  transition: 0.5s;
+}
+
+#Github:hover {
+  background: url(img/GitHub_hover.svg);
+}
+
+#Twitter {
+  height: 23px;
+  width: 56px;
+  background-image: url(img/Twitter.svg);
+  transition: 0.5s;
+}
+
+#Twitter:hover {
+  background: url(img/Twitter_hover.svg);
+}
+
+/* Animação de botões com interação */
+.button {
+  margin: 0.5em;
+  color: #808080;
+  outline: 2px solid #808080;
+  width: 468px;
+  padding: 15px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #ffffff;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background-color: #808080;
+  transform: skewX(35deg);
+  z-index: -1;
+  transition: width 1s;
+}
+
+.button:hover::before {
+  width: 150%;
+}
+
+/* Padrão de texto conteúdo */
+.readme {
+  margin: 1em;
+  width: 70%;
+  color: #000;
+}
+
+/* Container com conteudo de interação com divs*/
+.containerA {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  margin: 1em;
+}
+.containerB {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  margin: 1em;
+}
+.containerC {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  margin: 1em;
+}
+
+/* Espaço entre imagens de certificados */
+.img {
+  margin-top: 2em;
+}
+
+/* Texto de contato */
+.anex {
+  color: #808080;
+  outline: 2px solid #808080;
+  margin: 0.5em;
+  padding: 5px;
+  border-radius: 20px;
+  width: 100px;
+}
+
+.anex:hover {
+  background-color: #808080;
+  color: #fff;
+  transition: 0.5s;
+}
+
+/* Negrito */
+.bold {
+  font-weight: 600;
+}
+
+/* Response cellphone screen */
+@media only screen and (max-width: 520px) {
+  .button {
+    width: 320px;
+  }
+}
