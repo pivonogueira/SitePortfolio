@@ -1,6 +1,6 @@
 # Website de apresentação
 <fig>
-<img src=https://proxy.organicadigital.com/img-bacf38906d12cab2.png?thumb=701x" alt="Imagem de interface de dispositivos">
+<img src="https://proxy.organicadigital.com/img-bacf38906d12cab2.png?thumb=701x" alt="Imagem de interface de dispositivos">
 </fig>
 
 ## Visuzalização
