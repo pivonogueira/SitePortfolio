@@ -7,10 +7,9 @@
 Para executar o projeto, acesse: https://pivonogueira.github.io/SitePortfolio/.
 
 ## Tecnologias
-* [HTML] - Tecnologia de marcação para desenvolvimento.
-* [CSS] - Tecnologia de marcação para formatação.
-* [JavaScript] - Tecnologia de desenvolvimento para dinamismo.
-
+* [HTML]
+* [CSS]
+* [JavaScript]
 
 # Site apresentação
 
